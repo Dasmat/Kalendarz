@@ -13,6 +13,9 @@ $sql = "INSERT INTO wydarzenia (name,description,date) VALUES ('$Name','$Descrip
  }
  else
  {
-	 echo 'Dodano';
+	 echo 'Dodano, zaraz nastąpi przekiewowanie';
  }
+ 
+ header("refresh:2; url=index.html");
+ 
  ?>

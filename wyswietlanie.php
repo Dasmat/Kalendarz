@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 </head>
 <body>
-
+<center>
 <table action="wyswietlanie.php">
 	<tr>
 		<th>Nazwa:</th>
@@ -34,7 +34,11 @@ $records = mysqli_query($con,$sql);
  ?>
 </tr>
 </table>
-
+<br>
+	<form method="get" action="index.html">
+	<button type="submit">Główna strona</button>
+	</form>
+</center>
 
 </body>
 </html>

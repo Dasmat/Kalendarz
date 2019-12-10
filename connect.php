@@ -10,6 +10,6 @@
 	if ($con->connect_error) {
     die("Connection failed: " . $link->connect_error);
 }
-echo "Connected successfully";
+// echo "Connected successfully"; //potrzebne do testowania
   
 ?>
