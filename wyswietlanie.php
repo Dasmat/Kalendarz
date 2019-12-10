@@ -6,7 +6,7 @@
 <center>
 <table action="wyswietlanie.php">
 	<tr>
-		<th>Nazwa:</th>
+		<th>Nazwa wydarzenia:</th>
 		<th>Opis:</th>
 		<th>Data:</th>
 	
