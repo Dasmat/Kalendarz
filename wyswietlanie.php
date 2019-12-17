@@ -6,9 +6,12 @@
 <center>
 <table action="wyswietlanie.php">
 	<tr>
-		<th>Nazwa wydarzenia:</th>
-		<th>Opis wydarzenia:</th>
-		<th>Data wydarzenia:</th>
+		<th>Tytuł:</th>
+		<th>Godzina:</th>
+		<th>Data:</th>
+		<th>Lokalizacja:</th>
+		<th>Opis:</th>
+		
 	
 <?php
 include("wyswietl.php");
@@ -22,4 +25,3 @@ include("wyswietl.php");
 </center>
 
 </body>
-</html>
