@@ -4,19 +4,40 @@
 </head>
 <body>
 <center>
+<font size="20">Dodaj wydarzenie:</font><br><br>
 <form action="dodawanie.php" method="post">
-
-Nazwa wydarzenia: 	<input type="text" name="name">
-Opis:	<input type="text" name="description">
-Data:	<input type="date" name="date">
-
-<input type="submit" value="Dodaj">
+<table>
+  <tr>
+    <td>Tytuł:</td>
+    <td><input type="text" name="name" required="required"></td>
+  </tr>
+  <tr>
+    <td>Godzina:</td>
+    <td><input type="time" name="time" required="required"></td>
+  </tr>
+  <tr>
+    <td>Data:</td>
+    <td><input type="date" name="date" required="required"></td>
+  </tr>
+  <tr>
+    <td>Lokalizacja:</td>
+    <td><input type="text" name="location" required="required"></td>
+  </tr>
+  <tr>
+    <td>Opis:</td>
+    <td><input type="text" name="description"></td></tr></td>
+  </tr>
+  <tr>
+    <td><font color='red'>Pola nie mogą być puste!!!</font></td>
+  </tr>
+  <tr>
+    <td colspan="2"><center><input type="submit" value="Dodaj"></center></td>
+  </tr>
+</table>
 </form>
-<font color='red'>Pola nie mogą być puste!!!</font>
-<br><br>
-	<form method="get" action="index.html">
-	<button type="submit">Główna strona</button>
-	</form>
+<form>
+<button type="submit" formaction="index.html">Strona główna</button>
+</form>
 </center>
 </body>
 </html>

@@ -2,10 +2,12 @@
 include("connect.php");
 
 $Name = $_POST['name'];
-$Description = $_POST['description'];
+$Time= $_POST['time'];
 $Date = $_POST['date'];
+$Location= $_POST['location'];
+$Description = $_POST['description'];
 
-$sql = "INSERT INTO wydarzenia (name,description,date) VALUES ('$Name','$Description','$Date')";
+$sql = "INSERT INTO wydarzenia (name,time,date,location,description) VALUES ('$Name','$Time','$Date', '$Location', '$Description')";
  
  if(!mysqli_query($con,$sql))
  {
@@ -13,7 +15,7 @@ $sql = "INSERT INTO wydarzenia (name,description,date) VALUES ('$Name','$Descrip
  }
  else
  {
-	 echo 'Dodano, zaraz nastąpi przekiewowanie';
+	 echo 'Dodano, za chwilę nastąpi przekierowanie';
  }
  
  header("refresh:2; url=index.html");

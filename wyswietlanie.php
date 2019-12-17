@@ -7,36 +7,17 @@
 <table action="wyswietlanie.php">
 	<tr>
 		<th>Nazwa wydarzenia:</th>
-		<th>Opis:</th>
-		<th>Data:</th>
+		<th>Opis wydarzenia:</th>
+		<th>Data wydarzenia:</th>
 	
 <?php
-include("connect.php");
-
-$sql = "SELECT * FROM wydarzenia";
- 
-$records = mysqli_query($con,$sql);
- if(!mysqli_query($con,$sql))
- {
-	 echo 'Nie udało się nic wyświetlić.';
- }
- else
- {
-	 echo 'Wyświetlono.';
- }
- while($row = mysqli_fetch_array($records))
- {
-	 echo "<tr>";
-	 echo "<td>".$row['name']."</td>";
-	 echo "<td>".$row['description']."</td>";
-	 echo "<td>".$row['date']."</td>";	 
- }
- ?>
+include("wyswietl.php");
+?>
 </tr>
 </table>
 <br>
 	<form method="get" action="index.html">
-	<button type="submit">Główna strona</button>
+	<button type="submit">Strona główna</button>
 	</form>
 </center>
 
