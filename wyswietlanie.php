@@ -4,9 +4,9 @@
 </head>
 <body>
 <center>
-<table action="wyswietl.php">
+<table action="wyswietlanie.php">
 	<tr>
-		<th>Tytuł:</th>
+		<th>Tytuł wydarzenia:</th>
 		<th>Godzina:</th>
 		<th>Data:</th>
 		<th>Lokalizacja:</th>
