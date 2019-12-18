@@ -4,7 +4,7 @@
 </head>
 <body>
 <center>
-<table action="wyswietlanie.php">
+<table action="wyswietl.php">
 	<tr>
 		<th>Tytuł:</th>
 		<th>Godzina:</th>
